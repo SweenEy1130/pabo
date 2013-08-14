@@ -6,6 +6,18 @@ pabo
 
 启用SAE上面的kvdb后上传代码即可使用。
 
+本地调试时安装好相关的库后，启动:
+
+  $ cd pabo/1
+  $ chmod +x start_debug_server.sh
+  $ ./start_debug_server.sh
+  
+kvdb存储在/tmp/sae-pabo-blog.kvdb文件中，具体内容可参见start_debug_server.sh；
+
+Windows下面请自行根据sh文件写相应的bat文件。
+
+有任何问题，请到https://github.com/Shu-Ji/pabo/issues讨论。
+
 
 ### 附加说明
 
