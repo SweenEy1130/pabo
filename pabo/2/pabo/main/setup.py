@@ -57,7 +57,7 @@ def init():
         'navs': [
             {'link': '/', 'label': u'Home', 'title': u'Home page'},
             {'link': '/archives', 'label': u'Archive', 'title': u'Article archive'},
-            {'link': '/message', 'label': u'Comment', 'title': u'Comment'},
+            # {'link': '/message', 'label': u'Comment', 'title': u'Comment'},
             {'link': '/rss', 'label': u'RSS', 'title': u'RSS'},
             # {'link': '/about', 'label': u'关于', 'title': u'关于'},
         ],

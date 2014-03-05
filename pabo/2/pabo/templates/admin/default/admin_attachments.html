@@ -50,17 +50,19 @@ input[name="name"] {
                     <span class="icon">
                         <i class="icon-search"></i>
                     </span>
-                    <h5>图片搜索</h5>
+                    <h5><span class="btn btn-mini">图片搜索</span></h5>
                 </div>
                 <div class="widget-content center">
-                    <form onsubmit="return false;">
-                        <input name="name" type="text" autofocus placeholder="62a1c540c1fa965e2e6a96c0638519c4.jpg">
-                        <input type="submit" class="btn btn-primary" id="img-search" value="搜索">
+                    <form class="form-horizontal" onsubmit="return false;">
+                        <div class="control-group">
+                        <input class="form-control" name="name" type="text" autofocus="" placeholder="62a1c540c1fa965e2e6a96c0638519c4.jpg">
+                        <input class="btn btn-primary" type="submit" id="img-search" value="搜索">
                         <div class="center hide" id="img-search-result">
-                            <a class="tip-top thumbnail" title="点击查看大图" target="_blank"><img></a>
+                            <a class="tip-top thumbnail" title="" target="_blank" data-original-title="点击查看大图"><img></a>
                             <a class="del" title="删除图片" href="#"><i class="icon-trash icon-white"></i></a>
                         </div>
-                    </form>
+                    
+                </div></form>
                 </div>
             </div>
         </div>
@@ -72,7 +74,7 @@ input[name="name"] {
                     <span class="icon">
                         <i class="icon-picture"></i>
                     </span>
-                    <h5>图片管理</h5>
+                    <h5><span class="btn btn-mini">图片管理</span></h5>
                 </div>
                 <div class="widget-content">
                     {% if imgs|length == 0 %}

@@ -37,18 +37,21 @@ td input {
             <div class="widget-box">
                 <div class="widget-title">
                     <span class="icon"><i class="icon-plus"></i></span>
-                    <h5>添加分类</h5>
+                    <h5><span class="btn btn-mini">添加分类</span></h5>
                 </div>
                 <div class="widget-content nopadding">
                     <form action="/admin.add.cls.json" method="post" class="form-horizontal" id="form-add">
                         <div class="control-group">
-                            <label class="control-label">分类名称</label>
+                            <label class="control-label col-md-3">分类名称</label>
                             <div class="controls">
-                                <input type="text" name="cls" autofocus autocomplete="off">
+                                <input class="form-control" type="text" name="cls" autofocus autocomplete="off">
                             </div>
                         </div>
-                        <div class="form-actions">
-                            <input type="submit" class="btn btn-primary" value="添加">
+                        <div class="control-group">
+                            <label class="control-label col-md-3">{{ label }}</label>
+                            <div class="controls">
+                                <input type="submit" class="btn btn-primary" value="添加">
+                            </div>
                         </div>
                     </form>
                 </div>
@@ -60,7 +63,7 @@ td input {
             <div class="widget-box">
                 <div class="widget-title">
                     <span class="icon"><i class="icon-wrench"></i></span>
-                    <h5>管理分类
+                    <h5><span class="btn btn-mini">管理分类</span>
                         <span class="btn btn-mini" id="refresh">
                             <i class="icon-refresh"></i> 刷新
                         </span>

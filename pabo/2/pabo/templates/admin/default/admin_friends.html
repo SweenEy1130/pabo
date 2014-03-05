@@ -15,6 +15,9 @@ iframe {
 {% endif %}
 form input[type="text"] {
     margin-bottom: 0;
+    display: inline;
+    width: 200px;
+    margin-left: 10px;
 }
 @media(min-width: 670px) {
     form {
@@ -46,14 +49,14 @@ form input[type="text"] {
         <div class="widget-box">
             <div class="widget-title">
                 <span class="icon"><i class="icon-plus"></i></span>
-                <h5>添加友链</h5>
+                <h5><span class="btn btn-mini">添加友链</span></h5>
             </div>
             <div class="widget-content noiframe">
                 <form action="/admin.add.link.json" method="post" id="form-add">
                     <div class="control-group">
                         <div class="controls">
-                            <input type="text" name="name" autofocus placeholder="名称">
-                            <input type="text" name="link" placeholder="网址">
+                            <input class="form-control" type="text" name="name" autofocus placeholder="名称">
+                            <input class="form-control" type="text" name="link" placeholder="网址">
                             <button type="submit" class="btn btn-primary"><i class="icon-plus"></i> 加上去</button>
                         </div>
                     </div>
@@ -70,7 +73,7 @@ form input[type="text"] {
                 <span class="icon"><i class="icon-link"></i></span>
                 <h5 class="tip-right" title="前往 {{ link }}">
                     <a href="{{ link }}" target="_blank">
-                        <span>{{ title|truncate(18, True) }}</span>
+                        <span class="btn btn-mini">{{ title|truncate(18, True) }}</span>
                         <i class="icon-external-link"></i>
                     </a>
                 </h5>
@@ -79,9 +82,9 @@ form input[type="text"] {
                 <form action="/admin.mod.link.json" method="post" id="form-mod{{ loop.index }}">
                     <div class="control-group">
                         <div class="controls">
-                            <input type="text" name="name" value="{{ title }}">
-                            <input type="text" name="link" value="{{ link }}">
-                            <input type="hidden" name="raw" value="{{ link }}">
+                            <input class="form-control" type="text" name="name" value="{{ title }}">
+                            <input class="form-control" type="text" name="link" value="{{ link }}">
+                            <input class="form-control" type="hidden" name="raw" value="{{ link }}">
                             <button type="submit" class="btn btn-primary tip-bottom" title="保存友链"><i class="icon-save"></i></button>
                             <a class="btn del tip-bottom" title="删除友链"><i class="icon-trash"></i></a>
                         </div>
